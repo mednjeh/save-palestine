@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المقاومة ضد إسرائيل</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+        }
+        .header {
+            background-color: #4285F4;
+            color: white;
+            padding: 80px;
+            text-align: center;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+        }
+        .header img {
+            width: 300px;
+            height: auto;
+        }
+        .header h1 {
+            margin: 30px 0 0;
+            font-size: 6em;
+        }
+        .name {
+            margin: 30px 0;
+            font-size: 8em;
+            font-weight: bold;
+            color: #ffcc00;
+            text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+            font-family: 'Impact', sans-serif;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ffffff;
+            padding: 30px;
+            border-bottom: 3px solid #ddd;
+        }
+        .nav a {
+            color: #4285F4;
+            margin: 0 40px;
+            text-decoration: none;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background: url('https://www.palestine-solidarity.org.uk/wp-content/uploads/2021/05/Palestine-Flag-Banner-1600x900.jpg') no-repeat center center;
+            background-size: cover;
+            height: 900px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 0 60px;
+        }
+        .hero h2 {
+            font-size: 5em;
+            margin: 0;
+            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+            max-width: 1800px;
+            margin: auto;
+        }
+        .main-content {
+            background: white;
+            padding: 60px;
+            border-radius: 12px;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+            max-width: 1400px;
+            width: 100%;
+        }
+        .post {
+            margin-bottom: 60px;
+        }
+        .post h3 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .post img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+        }
+        .footer {
+            background-color: #ffffff;
+            text-align: center;
+            padding: 60px;
+            border-top: 3px solid #ddd;
+            box-shadow: 0 -12px 24px rgba(0, 0, 0, 0.3);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAACfCAMAAABX0UX9AAAAk1BMVEUAAAAAljn////tLjgSEhISmkHz8/Pz+/cAmjn0LzoAmDnwKzjtJzLtLDbsHCn0Jzj95+j5v8FxFhupISjUKTLsEyPzgIUtiznUPTj4Ijg0CgxvFRo4Cw0tCAvvUFf0h4zvRk7sFybvTFOnWThxdDmsVjhsdjk4iDklBwk6FhcQJSTrqq3sABfyc3nstLLXOTgljTnTP6nVAAADoUlEQVR4nO2ciXrSQBRGU6/aJdC4tArutdZd6/s/nUkpAiHLzNyZRHLPeYJwvh5/SCZmzzNQcHrxdexLOGRE5NnY13DAlPpOCTgYqfxdvBr7Mg4VWUHAYdzrI+AwZO3v4u3Yl3KIyD/mBOzPRh8BByDb/lhgX2QXAvajpo+A/ZC6PwL2oa6PgL1o0EfA7jToI2B3mvSVvB77ug6EFn0E7EaLPgJ2o00fATvRoY+A++nQR8D9dOkj4F569BFwNz36yoDfjH2J/zN9+gi4Ewd9BNyOgz4eI7Xjok8k5yZWM276CLgFR30scDOu+oQFbsJDHwHv46GPBd7HR5/wGKmOpz4C3sVTHzexdvHVJyzwNgH6CHhDgD4WeEOIPmGB1wTqI+AVgfpY4BWh+oSAKxT6CFiljwXW6RMCVuqzHrBSn/WAtfrEdsAR9FkOOIK+MuBv3x+aJIo+yeXH8WOLxNEn86v3DywSSZ/I+bsnY3+WEYimT2bnT8f+MMMTT5/ML+0FHFFfGfAHawFH1SezmbGA4+orA34x9icalMj6rC1wdH0yuzQUcHx9phY4gT5LC5xEn50FTqPPzAIn0mdlgZPps7HA6fSZWOCE+sqAP0494KT6pn8TK62+yS9wYn1TX+Dk+mR2NeGA0+ub9AIPoG/KCzyIvun+Bh5G32QXeCB9Mv/5a+yPmoLB/vqmOR/826eC5VXB9z4V/OpQwW9eFdxxUcH9PhXcbVbBsw4VPGlTwXNeFZwyUMEZFxWcsFLB+T4VnC5VwdlmFZysV8F7HSp4q0gF77Sp4I1KFbzPq4K3yVXE+r8Mfh+bJIq+4vbLI5vE0Le8Pjs7soleXy6fTqza0+srFi9Pxv4Q46HVV1wfmf3TO9LqMx1uhUpfcWs53AqNvqXtcCvC9ZkPtyJYX/lV2Xi4FaH6jC/umjB9eU64dwTps/1VeZsQfcsbwr3HXx+Lu4W3PhZ3G199hd2bU0346WNxa3jpY3Hr+Ohjcfdw15fLZ8Kt46yPxW3CVV9xw+I24KYvL1jcRpz0sbhtuOhbEm4b/frynMVtpVdfsWBx2+nTx+J20q2P37g9dOpjcfvo0ke4vbTrY3EdaNXH4rrQpq/g5pQLzfpYXEca9RGuK036WFxn9vURrgd7+viq7ENdH0cevdjVxwEMT3b0sbi+bOtjcb3Z6GNxA8g24bK4/qz1sbhBZCyuhjt9HMAIpdLHkcdgMhZXQ1Ys/hBuMBmLq+EvhMMsCJZiTNUAAAAASUVORK5CYII=" alt="شعار فلسطين">
+        <h1>المقاومة ضد إسرائيل</h1>
+        <div class="name">محمد نجاح</div>
+    </div>
+    <div class="nav">
+        <a href="#">الرئيسية</a>
+        <a href="#">ملفي الشخصي</a>
+        <a href="#">الرسائل</a>
+        <a href="#">الإشعارات</a>
+        <a href="#">تسجيل الخروج</a>
+    </div>
+    <div class="hero">
+        <h2>صمود فلسطين في وجه الاحتلال</h2>
+    </div>
+    <div class="container">
+        <div class="main-content">
+            <div class="post">
+                <h3>أحدث الأخبار</h3>
+                <p>فلسطين في قلوبنا، مقاومتها تعانق السماء، وأملها لا يموت، مهما صغرت الأحلام أو كبرت الآلام. نحن نحتفل ببطولة شعبها ونواصل دعمنا لأرضها.</p>
+                <img src="data:image/jpeg;base64,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" alt="أحدث الأخبار">
+            </div>
+            <div class="post">
+                <h3>الأحداث القادمة</h3>
+                <p>يا أرض النقاء، يا فلسطين، سنبقى نرفع رايتك عالياً، وصوتنا سيظل ينادي: الحرية لفلسطين! المستقبل لنا وأملنا فيك دائم.</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL1aXtRXmoTx7it2MtYvwymG57TVM4VIXOOg&s" alt="الأحداث القادمة">
+            </div>
+            <!-- أضف المزيد من المشاركات أو المحتوى هنا -->
+        </div>
+    </div>
+</body>
+</html>
